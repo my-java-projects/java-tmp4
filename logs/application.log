@@ -1,0 +1,24 @@
+2024-08-19 12:39:26,096 [main] DEBUG org.example.Main - This is a debug message
+2024-08-19 12:39:26,096 [main] INFO  org.example.Main - This is an info message
+2024-08-19 12:39:26,097 [main] WARN  org.example.Main - This is a warning message
+2024-08-19 12:39:26,097 [main] ERROR org.example.Main - This is an error message
+2024-08-19 12:39:26,097 [main] FATAL org.example.Main - This is a fatal message
+2024-08-19 12:39:36,035 [main] DEBUG org.example.Main - This is a debug message
+2024-08-19 12:39:36,035 [main] INFO  org.example.Main - This is an info message
+2024-08-19 12:39:36,035 [main] WARN  org.example.Main - This is a warning message
+2024-08-19 12:39:36,036 [main] ERROR org.example.Main - This is an error message
+2024-08-19 12:39:36,036 [main] FATAL org.example.Main - This is a fatal message
+2024-08-19 13:36:10,512 [main] DEBUG org.example.Main - This is a debug message
+2024-08-19 13:36:10,513 [main] INFO  org.example.Main - This is an info message
+2024-08-19 13:36:10,513 [main] WARN  org.example.Main - This is a warning message
+2024-08-19 13:36:10,513 [main] ERROR org.example.Main - This is an error message
+2024-08-19 13:36:10,513 [main] FATAL org.example.Main - This is a fatal message
+2024-08-19 13:36:21,226 [main] DEBUG org.example.Main - This is a debug message
+2024-08-19 13:36:21,226 [main] INFO  org.example.Main - This is an info message
+2024-08-19 13:36:21,226 [main] WARN  org.example.Main - This is a warning message
+2024-08-19 13:36:21,226 [main] ERROR org.example.Main - This is an error message
+2024-08-19 13:36:21,226 [main] FATAL org.example.Main - This is a fatal message
+2024-08-19 13:48:44 INFO  org.example.Main - This is an info message
+2024-08-19 13:48:44 WARN  org.example.Main - This is a warning message
+2024-08-19 13:48:44 ERROR org.example.Main - This is an error message
+2024-08-19 13:48:44 FATAL org.example.Main - This is a fatal message

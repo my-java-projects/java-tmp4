@@ -2,7 +2,7 @@
 <Configuration status="WARN">
     <Appenders>
         <!-- INFO Level Appender -->
-        <File name="InfoFileAppender" fileName="logs/info.log" append="true">
+        <File name="InfoFileAppender" fileName="C:/Users/Negin/IdeaProjects/logs/info.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <!-- Only log INFO and lower levels (up to INFO) -->
             <Filters>
@@ -11,7 +11,7 @@
         </File>
 
         <!-- ERROR Level Appender -->
-        <File name="ErrorFileAppender" fileName="logs/error.log" append="true">
+        <File name="ErrorFileAppender" fileName="C:/Users/Negin/IdeaProjects/logs/error.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <!-- Only log ERROR and lower levels (up to ERROR) -->
             <Filters>
@@ -20,7 +20,7 @@
         </File>
 
         <!-- DEBUG Level Appender -->
-        <File name="DebugFileAppender" fileName="logs/debug.log" append="true">
+        <File name="DebugFileAppender" fileName="C:/Users/Negin/IdeaProjects/logs/debug.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <!-- Only log DEBUG and lower levels (up to DEBUG) -->
             <Filters>
@@ -29,7 +29,7 @@
         </File>
 
         <!-- WARN Level Appender -->
-        <File name="WarnFileAppender" fileName="logs/warn.log" append="true">
+        <File name="WarnFileAppender" fileName="C:/Users/Negin/IdeaProjects/logs/warn.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <!-- Only log WARN and lower levels (up to WARN) -->
             <Filters>
@@ -38,7 +38,7 @@
         </File>
 
         <!-- FATAL Level Appender -->
-        <File name="FatalFileAppender" fileName="logs/fatal.log" append="true">
+        <File name="FatalFileAppender" fileName="C:/Users/Negin/IdeaProjects/logs/fatal.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <!-- Only log FATAL and lower levels (up to FATAL) -->
             <Filters>
