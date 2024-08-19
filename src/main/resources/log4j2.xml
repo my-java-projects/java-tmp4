@@ -1,13 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
-        <File name="FileAppender" fileName="logs/application.log">
+        <!-- INFO Level Appender -->
+        <File name="InfoFileAppender" fileName="logs/info.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+            <!-- Only log INFO and lower levels (up to INFO) -->
+            <Filters>
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
         </File>
+
+        <!-- ERROR Level Appender -->
+        <File name="ErrorFileAppender" fileName="logs/error.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+            <!-- Only log ERROR and lower levels (up to ERROR) -->
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- DEBUG Level Appender -->
+        <File name="DebugFileAppender" fileName="logs/debug.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+            <!-- Only log DEBUG and lower levels (up to DEBUG) -->
+            <Filters>
+                <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- WARN Level Appender -->
+        <File name="WarnFileAppender" fileName="logs/warn.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+            <!-- Only log WARN and lower levels (up to WARN) -->
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- FATAL Level Appender -->
+        <File name="FatalFileAppender" fileName="logs/fatal.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+            <!-- Only log FATAL and lower levels (up to FATAL) -->
+            <Filters>
+                <ThresholdFilter level="fatal" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
     </Appenders>
+
+
     <Loggers>
-        <Root level="info">
-            <AppenderRef ref="FileAppender"/>
+        <Root level="debug">
+            <AppenderRef ref="InfoFileAppender"/>
+            <AppenderRef ref="ErrorFileAppender"/>
+            <AppenderRef ref="DebugFileAppender"/>
+            <AppenderRef ref="WarnFileAppender"/>
+            <AppenderRef ref="FatalFileAppender"/>
         </Root>
     </Loggers>
 </Configuration>
