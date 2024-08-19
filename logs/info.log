@@ -1,4 +1,0 @@
-2024-08-19 14:06:29 INFO  org.example.Main - This is an info message
-2024-08-19 14:06:29 WARN  org.example.Main - This is a warning message
-2024-08-19 14:06:29 ERROR org.example.Main - This is an error message
-2024-08-19 14:06:29 FATAL org.example.Main - This is a fatal message
